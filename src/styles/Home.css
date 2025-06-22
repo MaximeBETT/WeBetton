@@ -76,6 +76,7 @@
 
 .skills {
   margin: 5rem 0;
+  width: 100%; /* Pour s'assurer que skills prend toute la largeur */
 }
 
 .skills h2 {
@@ -88,6 +89,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
+  width: 100%; /* Assure que le container de grid prend toute la largeur */
 }
 
 .skill-card {
@@ -134,14 +136,23 @@
   line-height: 1.8;
 }
 
-.about {
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.section.about {
   margin: 5rem auto;
   max-width: 900px;
+  width: 100%;
   padding: 3rem;
   background-color: var(--bg-secondary);
   border-radius: 16px;
   box-shadow: var(--card-shadow);
   border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
 }
 
 .about h2 {
