@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 const Contact = () => {
@@ -9,6 +10,7 @@ const Contact = () => {
     message: ''
   });
   
+  const form = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -24,22 +26,34 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simuler l'envoi du formulaire
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setSubmitMessage('Votre message a été envoyé avec succès!');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-    }, 1500);
-    
-    // Note: Dans une véritable implémentation, vous enverriez cette donnée à une API ou à un service de backend
+    setSubmitMessage('');
+
+    emailjs
+      .sendForm(
+        'service_81y7t7n',
+        'template_lh5s4xm',
+        form.current,
+        'opEb_VR5aR3dv6VNJ'
+      )
+      .then(
+        () => {
+          setIsSubmitting(false);
+          setSubmitSuccess(true);
+          setSubmitMessage('Votre message a été envoyé avec succès !');
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+          });
+        },
+        (error) => {
+          setIsSubmitting(false);
+          setSubmitSuccess(false);
+          setSubmitMessage('Une erreur est survenue. Veuillez réessayer.');
+          console.error('EmailJS error:', error.text);
+        }
+      );
   };
 
   return (
@@ -58,7 +72,7 @@ const Contact = () => {
               <i className="icon-email">✉️</i>
               <div>
                 <h4>Email</h4>
-                <p>contact@webetton.com</p>
+                <p>maxime@webetton.fr</p>
               </div>
             </div>
             
@@ -73,7 +87,7 @@ const Contact = () => {
         </div>
         
         <div className="contact-form">
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Nom</label>
               <input 
