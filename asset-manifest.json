@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/WeBetton/static/css/main.ab5f539b.css",
-    "main.js": "/WeBetton/static/js/main.54ca7652.js",
-    "static/js/453.7509e9e9.chunk.js": "/WeBetton/static/js/453.7509e9e9.chunk.js",
-    "index.html": "/WeBetton/index.html",
-    "main.ab5f539b.css.map": "/WeBetton/static/css/main.ab5f539b.css.map",
-    "main.54ca7652.js.map": "/WeBetton/static/js/main.54ca7652.js.map",
-    "453.7509e9e9.chunk.js.map": "/WeBetton/static/js/453.7509e9e9.chunk.js.map"
+    "main.css": "/static/css/main.ab5f539b.css",
+    "main.js": "/static/js/main.8ab4bfa6.js",
+    "static/js/453.7509e9e9.chunk.js": "/static/js/453.7509e9e9.chunk.js",
+    "index.html": "/index.html",
+    "main.ab5f539b.css.map": "/static/css/main.ab5f539b.css.map",
+    "main.8ab4bfa6.js.map": "/static/js/main.8ab4bfa6.js.map",
+    "453.7509e9e9.chunk.js.map": "/static/js/453.7509e9e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab5f539b.css",
-    "static/js/main.54ca7652.js"
+    "static/js/main.8ab4bfa6.js"
   ]
 }
