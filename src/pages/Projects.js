@@ -1,14 +1,15 @@
 import React from 'react';
 import '../styles/Projects.css';
+import imgPlanhora from '../assets/Planhora-Logo-768x427.png';
 
 // Cette liste de projets est un exemple, vous pourrez la modifier manuellement
 const projectsData = [
   {
     id: 1,
-    title: "Site e-commerce",
-    description: "Site de vente en ligne avec gestion de panier et système de paiement",
-    technologies: ["React", "PHP", "MySQL"],
-    image: "https://via.placeholder.com/600x400?text=E-commerce",
+    title: "Planhora",
+    description: "Site de planification d'activités pour les entreprises et les particuliers",
+    technologies: ["JavaScript", "PHP", "MySQL"],
+    image: imgPlanhora,
     link: "#"
   },
   {
