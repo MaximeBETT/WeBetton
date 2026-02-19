@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Projects.css';
-import imgPlanhora from '../assets/Logo-PlanHora-blanc-300x154.png';
+import imgPlanhora from '../assets/Planhora-Logo-768x427.png';
 
 // Cette liste de projets est un exemple, vous pourrez la modifier manuellement
 const projectsData = [
