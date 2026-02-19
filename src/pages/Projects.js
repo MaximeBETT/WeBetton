@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Projects.css';
 import imgPlanhora from '../assets/Planhora-Logo-768x427.png';
+import imgBudgetMariage from '../assets/Budget-mariage.png';
 
 // Cette liste de projets est un exemple, vous pourrez la modifier manuellement
 const projectsData = [
@@ -14,10 +15,10 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Application de gestion",
-    description: "Dashboard pour gérer les stocks et les commandes d'une entreprise",
-    technologies: ["React", "PHP", "MySQL"],
-    image: "https://via.placeholder.com/600x400?text=Gestion",
+    title: "Budget Mariage",
+    description: "Création d'un outil de mise en place de plan de table pour les mariages",
+    technologies: ["JavaScript", "PHP", "MySQL"],
+    image: imgBudgetMariage,
     link: "#"
   },
   {
