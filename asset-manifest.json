@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.ab5f539b.css",
-    "main.js": "./static/js/main.a54901fd.js",
+    "main.js": "./static/js/main.b936eb65.js",
     "static/js/453.7509e9e9.chunk.js": "./static/js/453.7509e9e9.chunk.js",
+    "static/media/Planhora-Logo-768x427.png": "./static/media/Planhora-Logo-768x427.8df9ed7b46759637f89c.png",
     "index.html": "./index.html",
     "main.ab5f539b.css.map": "./static/css/main.ab5f539b.css.map",
-    "main.a54901fd.js.map": "./static/js/main.a54901fd.js.map",
+    "main.b936eb65.js.map": "./static/js/main.b936eb65.js.map",
     "453.7509e9e9.chunk.js.map": "./static/js/453.7509e9e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab5f539b.css",
-    "static/js/main.a54901fd.js"
+    "static/js/main.b936eb65.js"
   ]
 }
