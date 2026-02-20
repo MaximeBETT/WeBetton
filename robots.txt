@@ -1,3 +1,13 @@
 # https://www.robotstxt.org/robotstxt.html
+# WeBetton - Développeur Web Freelance Lyon
+
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /static/js/*.map
+Disallow: /static/css/*.map
+
+# Sitemap
+Sitemap: https://webetton.fr/sitemap.xml
+
+# Crawl-delay (politesse envers les bots)
+Crawl-delay: 1
