@@ -8,10 +8,14 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import './styles/App.css';
 
+// Détecte si on est sur GitHub Pages pour adapter le basename
+const isGitHubPages = window.location.hostname.includes('github.io');
+const basename = isGitHubPages ? '/WeBetton' : '';
+
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename={basename}>
         <div className="app">
           <Header />
           <main className="main-content">
