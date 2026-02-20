@@ -9,7 +9,7 @@ const projectsData = [
   {
     id: 1,
     title: "Planhora",
-    description: "Site de planification d'activités pour les entreprises et les particuliers. Application web complète avec gestion de planning et réservation.",
+    description: "Site de planification d'activités pour les entreprises et les particuliers. Application web complète avec gestion de planning.",
     technologies: ["JavaScript", "PHP", "MySQL"],
     image: imgPlanhora,
     link: "#"
@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Budget Mariage",
-    description: "Outil de gestion de budget et création de plan de table pour les mariages. Interface intuitive pour organiser votre événement.",
+    description: "Outil de création de plan de table pour les mariages. Interface intuitive pour organiser votre événement.",
     technologies: ["JavaScript", "PHP", "MySQL"],
     image: imgBudgetMariage,
     link: "#"
