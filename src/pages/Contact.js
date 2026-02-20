@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
@@ -56,38 +57,71 @@ const Contact = () => {
       );
   };
 
+  // Structured Data pour la page Contact
+  const contactJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contacter WeBetton - Développeur Web Freelance Lyon",
+    "description": "Contactez WeBetton pour un devis gratuit. Développeur web freelance à Lyon spécialisé React, PHP, JavaScript.",
+    "url": "https://webetton.fr/#/contact",
+    "mainEntity": {
+      "@type": "ProfessionalService",
+      "name": "WeBetton",
+      "email": "maxime@webetton.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lyon",
+        "addressRegion": "Auvergne-Rhône-Alpes",
+        "addressCountry": "FR"
+      }
+    }
+  };
+
   return (
     <div className="contact">
-      <h1>Me contacter</h1>
+      <Helmet>
+        <title>Contact | WeBetton - Développeur Web Freelance Lyon - Devis Gratuit</title>
+        <meta name="description" content="Contactez WeBetton pour un devis gratuit. Développeur web freelance à Lyon, je réalise votre site internet ou application web sur mesure en React, PHP, JavaScript." />
+        <meta name="keywords" content="contact développeur web lyon, devis site internet lyon, devis gratuit web, freelance web lyon contact" />
+        <link rel="canonical" href="https://webetton.fr/#/contact" />
+        <meta property="og:title" content="Contact | WeBetton - Devis Gratuit Développement Web" />
+        <meta property="og:description" content="Contactez-moi pour un devis gratuit. Développeur web freelance à Lyon." />
+        <meta property="og:url" content="https://webetton.fr/#/contact" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(contactJsonLd)}</script>
+      </Helmet>
+
+      <h1>Contactez-moi — Devis Gratuit</h1>
       <div className="contact-container">
-        <div className="contact-info">
-          <h3>Informations</h3>
+        <aside className="contact-info" aria-label="Informations de contact">
+          <h2>Informations</h2>
           <p>
-            Vous avez un projet web en tête ou des questions ? N'hésitez pas à me contacter.
+            Vous avez un <strong>projet web</strong> en tête ou des questions ? 
+            N'hésitez pas à me contacter pour obtenir un <strong>devis gratuit</strong>. 
             Je vous répondrai dans les plus brefs délais.
           </p>
           
           <div className="contact-methods">
-            <div className="contact-method">
-              <i className="icon-email">✉️</i>
+            <address className="contact-method">
+              <span className="icon-email" aria-hidden="true">✉️</span>
               <div>
-                <h4>Email</h4>
-                <p>maxime@webetton.fr</p>
+                <h3>Email</h3>
+                <p><a href="mailto:maxime@webetton.fr">maxime@webetton.fr</a></p>
               </div>
-            </div>
+            </address>
             
             <div className="contact-method">
-              <i className="icon-location">📍</i>
+              <span className="icon-location" aria-hidden="true">📍</span>
               <div>
-                <h4>Localisation</h4>
-                <p>France</p>
+                <h3>Localisation</h3>
+                <p>Lyon, France</p>
               </div>
             </div>
           </div>
-        </div>
+        </aside>
         
         <div className="contact-form">
-          <form ref={form} onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit} aria-label="Formulaire de contact">
             <div className="form-group">
               <label htmlFor="name">Nom</label>
               <input 
@@ -96,7 +130,9 @@ const Contact = () => {
                 name="name" 
                 value={formData.name}
                 onChange={handleChange}
-                required 
+                required
+                autoComplete="name"
+                placeholder="Votre nom"
               />
             </div>
             
@@ -108,7 +144,9 @@ const Contact = () => {
                 name="email" 
                 value={formData.email}
                 onChange={handleChange}
-                required 
+                required
+                autoComplete="email"
+                placeholder="votre@email.com"
               />
             </div>
             
@@ -120,7 +158,8 @@ const Contact = () => {
                 name="subject" 
                 value={formData.subject}
                 onChange={handleChange}
-                required 
+                required
+                placeholder="Sujet de votre message"
               />
             </div>
             
@@ -133,15 +172,16 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
+                placeholder="Décrivez votre projet ou posez votre question..."
               ></textarea>
             </div>
             
-            <button type="submit" className="btn" disabled={isSubmitting}>
-              {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
+            <button type="submit" className="btn" disabled={isSubmitting} aria-busy={isSubmitting}>
+              {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
             </button>
             
             {submitMessage && (
-              <div className={`submit-message ${submitSuccess ? 'success' : 'error'}`}>
+              <div className={`submit-message ${submitSuccess ? 'success' : 'error'}`} role="alert">
                 {submitMessage}
               </div>
             )}

@@ -13,6 +13,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-brand {
+  font-size: 1rem !important;
+  margin-bottom: 0.3rem !important;
+  opacity: 1 !important;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  transition: color 0.3s;
+  opacity: 0.8;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-color);
+  opacity: 1;
 }
 
 .footer p {
@@ -59,5 +98,9 @@
     flex-direction: column;
     gap: 1.2rem;
     text-align: center;
+  }
+  
+  .footer-nav ul {
+    justify-content: center;
   }
 }

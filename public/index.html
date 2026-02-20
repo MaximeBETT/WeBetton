@@ -1,44 +1,175 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="WeBetton - Développement web personnalisé en PHP, HTML, CSS, JavaScript et React"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/webetton192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>WeBetton | Développement Web</title>
+    <!-- SEO Meta Tags -->
+    <title>WeBetton | Développeur Web Freelance à Lyon - Sites Web & Applications React</title>
+    <meta name="description" content="WeBetton - Développeur web freelance à Lyon. Création de sites internet sur mesure, applications web en React, PHP, JavaScript. Devis gratuit pour votre projet web." />
+    <meta name="keywords" content="développeur web lyon, création site internet lyon, freelance web lyon, développeur react lyon, développeur php lyon, webetton, site vitrine lyon, application web lyon, développement web sur mesure" />
+    <meta name="author" content="WeBetton - Maxime" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://webetton.fr/" />
+
+    <!-- Geo Meta Tags (SEO Local) -->
+    <meta name="geo.region" content="FR-ARA" />
+    <meta name="geo.placename" content="Lyon" />
+    <meta name="geo.position" content="45.764043;4.835659" />
+    <meta name="ICBM" content="45.764043, 4.835659" />
+
+    <!-- Theme & App -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="WeBetton" />
+    <meta name="application-name" content="WeBetton" />
+    <meta name="msapplication-TileColor" content="#000000" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webetton.fr/" />
+    <meta property="og:title" content="WeBetton | Développeur Web Freelance à Lyon" />
+    <meta property="og:description" content="Création de sites internet sur mesure et applications web en React, PHP, JavaScript. Développeur web freelance basé à Lyon." />
+    <meta property="og:image" content="https://webetton.fr/webetton512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Logo WeBetton - Développeur Web Freelance Lyon" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="WeBetton" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WeBetton | Développeur Web Freelance à Lyon" />
+    <meta name="twitter:description" content="Création de sites internet sur mesure et applications web. Développeur freelance basé à Lyon." />
+    <meta name="twitter:image" content="https://webetton.fr/webetton512.png" />
+    <meta name="twitter:image:alt" content="Logo WeBetton" />
+
+    <!-- Favicons & Icons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/webetton192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/webetton512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/webetton192.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- DNS Prefetch & Preconnect -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data: Organization (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "WeBetton",
+      "url": "https://webetton.fr",
+      "logo": "https://webetton.fr/webetton512.png",
+      "image": "https://webetton.fr/webetton512.png",
+      "description": "Développeur web freelance à Lyon. Création de sites internet sur mesure, applications web en React, PHP, JavaScript.",
+      "email": "maxime@webetton.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lyon",
+        "addressRegion": "Auvergne-Rhône-Alpes",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.764043,
+        "longitude": 4.835659
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Lyon"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Auvergne-Rhône-Alpes"
+        },
+        {
+          "@type": "Country",
+          "name": "France"
+        }
+      ],
+      "priceRange": "$$",
+      "knowsAbout": ["Développement Web", "React", "PHP", "JavaScript", "HTML", "CSS", "MySQL", "Sites Vitrines", "Applications Web"],
+      "sameAs": [
+        "https://github.com/webetton"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Maxime",
+        "jobTitle": "Développeur Web Freelance"
+      },
+      "serviceType": ["Création de sites web", "Développement d'applications web", "Développement front-end React", "Développement back-end PHP"]
+    }
+    </script>
+
+    <!-- Structured Data: WebSite (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "WeBetton",
+      "url": "https://webetton.fr",
+      "description": "Développeur web freelance à Lyon - Création de sites internet et applications web sur mesure",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@type": "Organization",
+        "name": "WeBetton",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://webetton.fr/webetton512.png"
+        }
+      }
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://webetton.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projets",
+          "item": "https://webetton.fr/#/projects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contact",
+          "item": "https://webetton.fr/#/contact"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="padding:2rem;text-align:center;">
+        <h1>WeBetton - Développeur Web Freelance à Lyon</h1>
+        <p>Création de sites internet sur mesure et applications web en React, PHP, JavaScript.</p>
+        <p>Contactez-nous : <a href="mailto:maxime@webetton.fr">maxime@webetton.fr</a></p>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

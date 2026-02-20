@@ -10,21 +10,28 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className="header" role="banner">
       <div className="header-container">
-        <Link to="/" className="logo">
-          <h1>WeBetton</h1>
+        <Link to="/" className="logo" aria-label="WeBetton - Retour à l'accueil">
+          <span className="logo-text">WeBetton</span>
         </Link>
         
-        <div className={`menu-toggle ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <button 
+          className={`menu-toggle ${menuOpen ? 'active' : ''}`} 
+          onClick={toggleMenu}
+          aria-expanded={menuOpen}
+          aria-controls="main-navigation"
+          aria-label="Ouvrir le menu de navigation"
+          type="button"
+        >
           <div className="hamburger"></div>
-        </div>
+        </button>
 
-        <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+        <nav id="main-navigation" className={`nav-menu ${menuOpen ? 'active' : ''}`} role="navigation" aria-label="Navigation principale">
           <ul>
-            <li><Link to="/" onClick={() => setMenuOpen(false)}>Accueil</Link></li>
-            <li><Link to="/projects" onClick={() => setMenuOpen(false)}>Projets</Link></li>
-            <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+            <li><Link to="/" onClick={() => setMenuOpen(false)} aria-label="Page d'accueil">Accueil</Link></li>
+            <li><Link to="/projects" onClick={() => setMenuOpen(false)} aria-label="Voir mes projets et réalisations">Projets</Link></li>
+            <li><Link to="/contact" onClick={() => setMenuOpen(false)} aria-label="Me contacter pour un devis">Contact</Link></li>
           </ul>
         </nav>
       </div>
