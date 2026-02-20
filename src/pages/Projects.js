@@ -39,7 +39,7 @@ const Projects = () => {
     "@type": "CollectionPage",
     "name": "Projets et Réalisations Web - WeBetton",
     "description": "Portfolio de réalisations web : sites vitrines, applications web, outils en ligne. Développeur freelance à Lyon.",
-    "url": "https://webetton.fr/#/projects",
+    "url": "https://webetton.fr/projects",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": projectsData.map((project, index) => ({
@@ -57,10 +57,10 @@ const Projects = () => {
         <title>Projets & Réalisations Web | WeBetton - Développeur Freelance Lyon</title>
         <meta name="description" content="Découvrez mes réalisations web : sites vitrines, applications web, outils en ligne. Développeur web freelance à Lyon spécialisé React, PHP, JavaScript." />
         <meta name="keywords" content="portfolio développeur web, réalisations web lyon, projets react, projets php, site vitrine lyon, application web lyon" />
-        <link rel="canonical" href="https://webetton.fr/#/projects" />
+        <link rel="canonical" href="https://webetton.fr/projects" />
         <meta property="og:title" content="Projets & Réalisations Web | WeBetton" />
         <meta property="og:description" content="Portfolio de réalisations web : sites vitrines, applications en React, PHP, JavaScript." />
-        <meta property="og:url" content="https://webetton.fr/#/projects" />
+        <meta property="og:url" content="https://webetton.fr/projects" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(projectsJsonLd)}</script>
       </Helmet>

@@ -63,7 +63,7 @@ const Contact = () => {
     "@type": "ContactPage",
     "name": "Contacter WeBetton - Développeur Web Freelance Lyon",
     "description": "Contactez WeBetton pour un devis gratuit. Développeur web freelance à Lyon spécialisé React, PHP, JavaScript.",
-    "url": "https://webetton.fr/#/contact",
+    "url": "https://webetton.fr/contact",
     "mainEntity": {
       "@type": "ProfessionalService",
       "name": "WeBetton",
@@ -83,10 +83,10 @@ const Contact = () => {
         <title>Contact | WeBetton - Développeur Web Freelance Lyon - Devis Gratuit</title>
         <meta name="description" content="Contactez WeBetton pour un devis gratuit. Développeur web freelance à Lyon, je réalise votre site internet ou application web sur mesure en React, PHP, JavaScript." />
         <meta name="keywords" content="contact développeur web lyon, devis site internet lyon, devis gratuit web, freelance web lyon contact" />
-        <link rel="canonical" href="https://webetton.fr/#/contact" />
+        <link rel="canonical" href="https://webetton.fr/contact" />
         <meta property="og:title" content="Contact | WeBetton - Devis Gratuit Développement Web" />
         <meta property="og:description" content="Contactez-moi pour un devis gratuit. Développeur web freelance à Lyon." />
-        <meta property="og:url" content="https://webetton.fr/#/contact" />
+        <meta property="og:url" content="https://webetton.fr/contact" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(contactJsonLd)}</script>
       </Helmet>

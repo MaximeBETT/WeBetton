@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/((?!static|favicon|webetton|manifest|robots|sitemap).*)", "destination": "/index.html" }
+  ]
+}
