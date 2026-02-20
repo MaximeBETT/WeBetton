@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5395fa10.css",
-    "main.js": "/static/js/main.367adcf2.js",
-    "static/js/453.7509e9e9.chunk.js": "/static/js/453.7509e9e9.chunk.js",
-    "static/media/Planhora-Logo-768x427.png": "/static/media/Planhora-Logo-768x427.8df9ed7b46759637f89c.png",
-    "static/media/Budget-mariage.png": "/static/media/Budget-mariage.1ee54984a4ab1e65506a.png",
-    "index.html": "/index.html",
-    "main.5395fa10.css.map": "/static/css/main.5395fa10.css.map",
-    "main.367adcf2.js.map": "/static/js/main.367adcf2.js.map",
-    "453.7509e9e9.chunk.js.map": "/static/js/453.7509e9e9.chunk.js.map"
+    "main.css": "./static/css/main.5395fa10.css",
+    "main.js": "./static/js/main.7d5551e3.js",
+    "static/js/453.7509e9e9.chunk.js": "./static/js/453.7509e9e9.chunk.js",
+    "static/media/Planhora-Logo-768x427.png": "./static/media/Planhora-Logo-768x427.8df9ed7b46759637f89c.png",
+    "static/media/Budget-mariage.png": "./static/media/Budget-mariage.1ee54984a4ab1e65506a.png",
+    "index.html": "./index.html",
+    "main.5395fa10.css.map": "./static/css/main.5395fa10.css.map",
+    "main.7d5551e3.js.map": "./static/js/main.7d5551e3.js.map",
+    "453.7509e9e9.chunk.js.map": "./static/js/453.7509e9e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5395fa10.css",
-    "static/js/main.367adcf2.js"
+    "static/js/main.7d5551e3.js"
   ]
 }
