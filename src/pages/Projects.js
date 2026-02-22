@@ -24,10 +24,10 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Site vitrine restaurant",
-    description: "Site web vitrine avec présentation des menus, galerie photo et système de réservation en ligne pour un restaurant lyonnais.",
-    technologies: ["HTML", "CSS", "JavaScript", "PHP"],
-    image: "https://via.placeholder.com/600x400?text=Restaurant",
+    title: "Widget-IA",
+    description: "Widget d'intelligence artificielle intégré pour améliorer l'interaction utilisateur sur votre site web.",
+    technologies: ["JavaScript", "React", "Node.js"],
+    image: "https://via.placeholder.com/600x400?text=Widget-IA",
     link: "#"
   }
 ];
